@@ -5,13 +5,12 @@ local pywal = {}
 
 pywal.normal = {
   a = { bg = colors.color4, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color7 },
-  c = { bg = colors.background, fg = colors.foreground },
+  b = { bg = colors.color1, fg = colors.foreground },
+  c = { bg = colors.background, fg = colors.background },
 }
 
 pywal.insert = {
   a = { bg = colors.color2, fg = colors.background },
-  b = { bg = colors.background, fg = colors.color4 },
 }
 
 pywal.command = {
@@ -30,7 +29,7 @@ pywal.replace = {
 }
 
 pywal.inactive = {
-  a = { bg = colors.background, fg = colors.color7 },
+  a = { bg = colors.background, fg = colors.foreground },
   b = { bg = colors.background, fg = colors.foreground, gui = "bold" },
   c = { bg = colors.background, fg = colors.foreground },
 }
