@@ -1,11 +1,19 @@
 local M = {}
 local core = require('pywal.core')
 local highlights = require('pywal.highlights')
+local wal_file = os.getenv("HOME") .. "/.cache/wal/colors-wal.vim"
 
-function M.setup ()
+local load_colors = function()
+  print("File changed!", wal_file)
   local colors = core.get_colors()
-  vim.opt.termguicolors = true
   highlights.highlight_all(colors)
+end
+
+function M.setup()
+  vim.opt.termguicolors = true
+  load_colors()
+  local watchfile = require('configs.watchfile')
+  watchfile.watch(wal_file, load_colors)
 end
 
 return M
