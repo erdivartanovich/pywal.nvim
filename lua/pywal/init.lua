@@ -12,7 +12,7 @@ end
 function M.setup()
   vim.opt.termguicolors = true
   load_colors()
-  local watchfile = require('configs.watchfile')
+  local watchfile = require('pywal.watchfile')
   watchfile.watch(wal_file, load_colors)
 end
 

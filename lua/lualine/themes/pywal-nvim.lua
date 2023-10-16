@@ -6,7 +6,7 @@ local pywal = {}
 pywal.normal = {
   a = { bg = colors.color4, fg = colors.background },
   b = { bg = colors.color1, fg = colors.foreground },
-  c = { bg = colors.background, fg = colors.background },
+  c = { bg = colors.background, fg = colors.foreground },
 }
 
 pywal.insert = {
