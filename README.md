@@ -1,9 +1,15 @@
-# pywal.nvim
+# Pywal.nvim Enhanced
 
-Pywal.nvim is a reimplementation of [pywal.vim](https://github.com/dylanaraps/wal.vim)
-wrote totally in lua, with support for a few nvim lua plugins
+This project is a fork of the original [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) repository, which is now archived. It includes several enhancements, most notably the ability to automatically update the colorscheme every time the `pywal` command is executed.
 
-It's a reimplementation of wal.vim but wrote in lua, it is the best choice if you want to use a configured neovim with plugins totally writted in lua like Telescope or NvimTree, that aren't supported by default in wal.vim, another example of the real usage of pywal.nvim is in the case you want use lualine, lualine require the termguicolors enabled, but wal.vim doesn't support it, pywal.nvim in contrast, enable it by default because pywal.nvim doesn't ctermbg and ctermfg, it's only for termguicolors.
+Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dylanaraps/wal.vim) in Lua and is designed to work seamlessly with Neovim. It comes with built-in support for several Neovim Lua plugins.
+
+## Features
+
+- A complete rewrite of the original pywal.vim in Lua.
+- Seamless integration with Neovim.
+- Built-in support for various Neovim Lua plugins.
+- + Automatic colorscheme updating when using the `pywal` command.
 
 ## Screenshots
 
