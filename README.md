@@ -9,7 +9,10 @@ Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dyla
 - A complete rewrite of the original pywal.vim in Lua.
 - Seamless integration with Neovim.
 - Built-in support for various Neovim Lua plugins.
-- + Automatic colorscheme updating when using the `pywal` command.
+
+## Enhancements
+- [x] Enhance Treesitter Syntax Highlights
+- [ ] Automatic colorscheme updating when using the `pywal` command.
 
 ## Screenshots
 
