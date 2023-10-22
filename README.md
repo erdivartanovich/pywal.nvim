@@ -18,6 +18,8 @@ Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dyla
 
 ![01](./.screenshots/01.png)
 ![02](./.screenshots/02.png)
+![03](./.screenshots/03.png)
+![04](./.screenshots/03.png)
 
 ## External Plugin Support
 
