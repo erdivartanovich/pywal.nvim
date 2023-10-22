@@ -84,6 +84,75 @@ lualine.setup {
 }
 ```
 
+Or you can override lualine config and theme with your own configurations:
+
+```lua
+      local lualine = require('lualine')
+      local pywal_core = require('pywal.core')
+      local colors = pywal_core.get_colors()
+      local custom_theme = {
+        normal = {
+          a = { bg = colors.color4, fg = colors.background }, -- asign color from pywal colors
+          b = { bg = colors.color1, fg = colors.foreground },
+          c = { bg = '#2b2637', fg = colors.foreground },     -- or you can asign static color
+        },
+
+        insert = {
+          a = { bg = colors.color4, fg = colors.background }
+        },
+
+        command = {
+          a = { bg = colors.color5, fg = colors.background },
+          b = { bg = colors.background, fg = colors.color5 },
+        },
+
+        visual = {
+          a = { bg = colors.color6, fg = colors.background },
+          b = { bg = colors.background, fg = colors.color6 },
+        },
+
+        replace = {
+          a = { bg = colors.color11, fg = colors.background },
+          b = { bg = colors.background, fg = colors.color11 },
+        },
+
+        inactive = {
+          a = { bg = colors.background, fg = colors.foreground },
+          b = { bg = colors.background, fg = colors.foreground, gui = "bold" },
+          c = { bg = colors.background, fg = colors.foreground },
+        },
+      }
+
+      lualine.setup({
+        options = {
+          theme = custom_theme,
+          section_separators = { left = '', right = '' },
+        },
+        sections = {
+          lualine_a = {
+            { 'mode', separator = { left = '' }, right_padding = 2 },
+          },
+          lualine_b = { 'branch' },
+          lualine_c = { 'filename' },
+          lualine_x = { 'encoding', 'fileformat', 'filetype' },
+          lualine_y = { 'progress' },
+          lualine_z = {
+            { 'location', separator = { right = '' }, left_padding = 2 },
+          },
+        },
+        inactive_sections = {
+          lualine_a = {},
+          lualine_b = {},
+          lualine_c = { 'filename' },
+          lualine_x = { 'location' },
+          lualine_y = {},
+          lualine_z = {},
+        },
+        tabline = {},
+        extensions = {},
+      })
+```
+
 ## Activating the feline theme
 
 You can put this to your config to activate the feline config:
