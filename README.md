@@ -1,6 +1,6 @@
 # Pywal.nvim Enhanced
 
-This project is a fork of the original [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) repository, which is now archived. It includes several enhancements, most notably the ability to automatically update the colorscheme every time the `pywal` command is executed.
+This project is a fork of the original [pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) repository, which is now archived. It includes several enhancements in color mappings and integration with other plugins.
 
 Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dylanaraps/wal.vim) in Lua and is designed to work seamlessly with Neovim. It comes with built-in support for several Neovim Lua plugins.
 
@@ -11,6 +11,7 @@ Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dyla
 - Built-in support for various Neovim Lua plugins.
 
 ## Enhancements
+
 - [x] Enhance Treesitter Syntax Highlights
 - [ ] Automatic colorscheme updating when using the `pywal` command.
 
@@ -43,13 +44,13 @@ Pywal.nvim is a complete reimplementation of [pywal.vim](https://github.com/dyla
 You can install this plugin with packer:
 
 ```lua
-use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+use { 'erdivartanovich/pywal.nvim', as = 'pywal' }
 ```
 
 Or with vim-plug:
 
 ```vim
-Plug 'AlphaTechnolog/pywal.nvim', { 'as': 'pywal' }
+Plug 'erdivartanovich/pywal.nvim', { 'as': 'pywal' }
 ```
 
 ## Active theme
