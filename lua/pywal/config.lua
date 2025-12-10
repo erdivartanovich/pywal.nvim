@@ -35,9 +35,9 @@ M.highlights_base = function(colors)
 		DiffAdd = { fg = colors.foreground, bg = colors.color1 },
 		DiffChange = { fg = colors.foreground, bg = colors.color2 },
 		DiffDelete = { fg = colors.background, bg = colors.color7 },
-		QuickFixLine = { bg = colors.color1 },
-		PmenuSbar = { bg = colors.background },
-		PmenuThumb = { bg = colors.color1 },
+		QuickFixLine = { bg = colors.color1, fg = colors.foreground },
+		PmenuSbar = { bg = colors.background, fg = colors.foreground },
+		PmenuThumb = { bg = colors.color1, fg = colors.foreground },
 		MatchParen = { fg = colors.color4, bg = colors.background },
 		Cursor = { fg = colors.foreground, bg = colors.cursor },
 		lCursor = { fg = colors.foreground, bg = colors.cursor },
@@ -167,10 +167,6 @@ M.highlights_base = function(colors)
 		LspTroubleCount = { fg = colors.color6, bg = colors.foreground },
 		LspTroubleNormal = { fg = colors.foreground, bg = colors.background },
 
-		-- Illuminate
-		illuminatedWord = { bg = colors.foreground },
-		illuminatedCurWord = { bg = colors.foreground },
-
 		-- diff
 		diffAdded = { fg = colors.color4 },
 		diffRemoved = { fg = colors.color11 },
@@ -180,15 +176,6 @@ M.highlights_base = function(colors)
 		diffFile = { fg = colors.color7 },
 		diffLine = { fg = colors.color1 },
 		diffIndexLine = { fg = colors.color6 },
-
-		-- Neogit
-		NeogitBranch = { fg = colors.color6 },
-		NeogitRemote = { fg = colors.color6 },
-		NeogitHunkHeader = { bg = colors.background, fg = colors.foreground },
-		NeogitHunkHeaderHighlight = { bg = colors.foreground, fg = colors.color7 },
-		NeogitDiffContextHighlight = { bg = colors.background, fg = colors.foreground },
-		NeogitDiffDeleteHighlight = { fg = colors.color11, bg = colors.color11 },
-		NeogitDiffAddHighlight = { fg = colors.color4, bg = colors.color4 },
 
 		-- GitGutter
 		GitGutterAdd = { fg = colors.color4 }, -- diff mode: Added line |diff.txt|
