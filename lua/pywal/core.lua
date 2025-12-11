@@ -13,8 +13,8 @@ function M.get_colors()
 		color3 = vim.g.color3,
 		color4 = vim.g.color4,
 		color5 = vim.g.color5,
-		color6 = vim.g.color6,
-		color7 = vim.g.color7,
+		color6 = vim.g.color7,
+		color7 = "#9E9797",
 		error = "#C81E1E",
 	}
 end
