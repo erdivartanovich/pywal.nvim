@@ -5,6 +5,7 @@ function M.get_colors()
 
 	return {
 		background = vim.g.background,
+		background_alt = "#18181D",
 		foreground = vim.g.color7,
 		cursor = vim.g.cursor,
 		color0 = vim.g.color0,
