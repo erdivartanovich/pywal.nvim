@@ -17,6 +17,7 @@ function M.get_colors()
 		color6 = vim.g.color7,
 		color7 = "#9E9797",
 		error = "#C81E1E",
+		liner_nr = "#34364B",
 	}
 end
 
