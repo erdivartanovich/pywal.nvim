@@ -21,7 +21,7 @@ M.highlights_base = function(colors)
 		Comment = { fg = colors.color1 },
 		Folded = { fg = colors.color7, bg = colors.background },
 		FoldColumn = { fg = colors.color7, bg = colors.background },
-		LineNr = { fg = colors.color1, bg = colors.background },
+		LineNr = { fg = colors.color7, bg = colors.background },
 		FloatBorder = { fg = colors.foreground, bg = colors.background },
 		Whitespace = { fg = colors.color1 },
 		VertSplit = { fg = colors.background, bg = colors.color1 },
@@ -36,6 +36,7 @@ M.highlights_base = function(colors)
 		DiffChange = { fg = colors.foreground, bg = colors.color1 },
 		DiffDelete = { fg = colors.foreground, bg = colors.error },
 		QuickFixLine = { bg = colors.color1, fg = colors.foreground },
+		QuickFixFilenameInvalid = { fg = colors.color7 },
 		PmenuSbar = { bg = colors.background, fg = colors.foreground },
 		PmenuThumb = { bg = colors.color1, fg = colors.foreground },
 		MatchParen = { fg = colors.color7, bg = colors.background },
@@ -183,14 +184,17 @@ M.highlights_base = function(colors)
 		GitGutterDelete = { fg = colors.color5 }, -- diff mode: Deleted line |diff.txt|
 
 		-- GitSigns
-		GitSignsAdd = { fg = colors.color7 }, -- diff mode: Added line |diff.txt|
-		GitSignsChange = { fg = colors.color7 }, -- diff mode: Changed line |diff.txt|
-		GitSignsDelete = { fg = colors.color5 }, -- diff mode: Deleted line |diff.txt|
+		GitSignsAdd = { fg = colors.foreground }, -- diff mode: Added line |diff.txt|
+		GitSignsChange = { fg = colors.foreground }, -- diff mode: Changed line |diff.txt|
+		GitSignsDelete = { fg = colors.foreground }, -- diff mode: Deleted line |diff.txt|
 
 		-- Telescope
 		TelescopeBorder = { fg = colors.color7, bg = colors.background },
 		TelescopeNormal = { fg = colors.foreground, bg = colors.background },
 		TelescopeSelection = { fg = colors.foreground, bg = colors.color1 },
+		TelescopeResultsComment = { fg = colors.color7 },
+		TelescopeResultsSpecialComment = { fg = colors.color7 },
+		TelescopeResultsDiffUntracked = { fg = colors.color7 },
 
 		ReferencesCount = { fg = colors.color7 },
 		DefinitionCount = { fg = colors.color7 },
