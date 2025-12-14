@@ -195,6 +195,7 @@ M.highlights_base = function(colors)
 		TelescopeResultsComment = { fg = colors.color7 },
 		TelescopeResultsSpecialComment = { fg = colors.color7 },
 		TelescopeResultsDiffUntracked = { fg = colors.color7 },
+		TelescopeResultsLineNr = { bg = colors.background_alt },
 
 		ReferencesCount = { fg = colors.color7 },
 		DefinitionCount = { fg = colors.color7 },
