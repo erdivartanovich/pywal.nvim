@@ -17,7 +17,7 @@ function M.get_colors()
 		color6 = vim.g.color7,
 		color7 = "#9E9797",
 		error = "#C81E1E",
-		line_nr = "#34364B",
+		line_nr = "#4B4C56",
 	}
 end
 
