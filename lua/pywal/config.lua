@@ -27,7 +27,7 @@ M.highlights_base = function(colors)
 		VertSplit = { fg = colors.background, bg = colors.color1 },
 		CursorLine = { bg = colors.background_alt },
 		CursorColumn = { bg = colors.background_alt },
-		ColorColumn = { bg = colors.color1 },
+		ColorColumn = { bg = colors.line_nr },
 		NormalFloat = { bg = colors.background },
 		Visual = { bg = colors.color1, fg = colors.foreground },
 		VisualNOS = { bg = colors.background },
